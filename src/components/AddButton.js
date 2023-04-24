@@ -71,6 +71,7 @@ export const AddButton = () => {
       <Box paddingBottom={2}>
         <DateTimePicker
           label="Start"
+          value={data.startISO}
           onChange={(date) =>
             setData({ ...data, startISO: new Date(date).toISOString() })
           }
@@ -80,6 +81,7 @@ export const AddButton = () => {
         <span style={{ marginLeft: 4, marginRight: 4 }} />
         <DateTimePicker
           label="End"
+          value={data.endISO}
           onChange={(date) =>
             setData({ ...data, endISO: new Date(date).toISOString() })
           }
